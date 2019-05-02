@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.samuelgraciousetsiakoh.conversionprogram.MainActivity"
+    android:useDefaultMargins="true">
+
+
+    <TextView
+        android:text="Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:textSize="45dp"
+        android:id="@+id/label"
+        android:textColor="@android:color/black" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_columnSpan="2"
+
+        android:maxLength="10"
+        android:padding="10dp"
+        android:ems="10"
+        android:id="@+id/valueEditText" />
+    <!-- android:digits="0123456789."-->
+
+    <TextView
+        android:text="Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:id="@+id/resultLabel"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:id="@+id/displayTextView"
+        android:background="#ffffff"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:elevation="4dp"
+        android:padding="10dp"
+        android:id="@+id/valueTextView"
+        android:hint="@string/enter_value"
+        android:background="#ffffff" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="2"
+        android:id="@+id/radioAction">
+
+        <RadioButton
+            android:text="Convert to inches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/inchRadioButton" />
+
+        <RadioButton
+            android:text="Convert to kilometers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kiloRadioButton" />
+
+        <RadioButton
+            android:text="Convert to feet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/feetRadioButton"/>
+    </RadioGroup>
+
+
+</GridLayout>

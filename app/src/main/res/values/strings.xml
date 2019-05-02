@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Conversion Program</string>
+    <string name="enter_value">Enter the value:</string>
+</resources>
